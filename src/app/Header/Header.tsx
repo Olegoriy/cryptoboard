@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   return (
@@ -49,6 +50,7 @@ const Header = () => {
             >
               Settings
             </NavLink>
+            <ThemeToggle />
           </nav>
         </div>
       </div>
