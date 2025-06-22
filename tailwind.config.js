@@ -1,21 +1,17 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
+  darkMode: 'class', // Используем class-based темную тему
   content: [
-    "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    container: {
-      center: false,  
-      padding: '0',   
-      screens: {
-        DEFAULT: '100%', 
-        sm: '100%',
-        md: '100%',
-        lg: '100%',
-        xl: '100%',
-        '2xl': '100%',
-      },
+    extend: {
+      colors: {
+        // Добавьте свои кастомные цвета для обеих тем
+        primary: {
+          light: '#2563eb',
+          dark: '#3b82f6'
+        }
+      }
     },
   },
   plugins: [],
