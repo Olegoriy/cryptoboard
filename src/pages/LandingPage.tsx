@@ -1,6 +1,9 @@
 const LandingPage = () => {
     return (
-        <div>LANDING PAAAAAGE</div>
+        <>
+            <div>LANDING PAAAAAGE</div>
+            <div>In progressing...</div>
+        </>
     )
 }
 
